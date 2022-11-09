@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d1d1d1;
+  justify-content: center;
+}
+table {
+  width: 998px;
+  border-collapse: collapse;
+}
+table thead {
+  padding: 1.5rem;
+  height: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(132, 83, 254, 1) 0%,
+    rgba(157, 96, 248, 1) 58%,
+    rgba(190, 112, 239, 1) 100%
+  );
+}
+table thead th {
+  color: #fff;
+  font-weight: 500;
+}
+table thead th:not(:first-of-type) {
+    width: 220px;
+}
+table thead th:first-of-type {
+  border-top-left-radius: 10px;
+}
+table thead th:last-of-type {
+  border-top-right-radius: 10px;
+}
+table tbody {
+  background: linear-gradient(
+    130deg,
+    rgba(93, 29, 253, 1) 0%,
+    rgba(136, 32, 237, 1) 50%,
+    rgba(167, 46, 229, 1) 100%
+  );
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr th {
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+}
+table tbody tr th span {
+    position: absolute;
+    bottom: 4px;
+    right: 3px;
+    display: block;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: #4caf50;
+}
+table tbody tr th:first-of-type {
+    text-align: left;
+    padding: 0 2rem;
+}
+table tbody tr:last-of-type th:first-of-type {
+    border-bottom-left-radius: 10px;
+}
+table tbody tr:last-of-type th:last-of-type {
+    border-bottom-right-radius: 10px;
+}
+table tbody tr:nth-child(2n) {
+    background-color: rgb(255 255 255 / 20%);
+}
+.cle {
+    width: 998px;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+}
+.cle div {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 350px;
+    padding: 10px;
+    gap: 20px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+.cle div h1 {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.cle div p {
+    font-size: 17px;
+    font-weight: 500;
+}
+.cle div:first-of-type h1 {
+    background-color: #0E5DD5;
+}
+.cle div:nth-child(2) h1 {
+    background-color: #8256D7;
+}.cle div:last-of-type h1 {
+    background-color: #D8A021;
+}
+/* rgb(255 255 255 / 20%) */
